@@ -4,16 +4,49 @@
 [ext_resource type="Texture2D" uid="uid://clln1ndc4jlly" path="res://icon.svg" id="1_iikte"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
+size = Vector2(22.5, 11.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_703r5"]
 size = Vector2(133, 131)
 
 [node name="Level1Enemy" type="CharacterBody2D" unique_id=893323250]
 collision_layer = 2
 script = ExtResource("1_703r5")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=826982737]
-position = Vector2(0.5, 0.5)
-shape = SubResource("RectangleShape2D_04v0w")
-
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=104091810]
 modulate = Color(1, 0, 0, 1)
 texture = ExtResource("1_iikte")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=826982737]
+position = Vector2(0, 59)
+shape = SubResource("RectangleShape2D_04v0w")
+debug_color = Color(0, 0.5980001, 0.69, 0.92156863)
+
+[node name="Area2D" type="Area2D" parent="." unique_id=15574094]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=464830171]
+position = Vector2(0.5, 0.5)
+shape = SubResource("RectangleShape2D_703r5")
+debug_color = Color(1, 0.6120475, 0.5537223, 0.41960785)
+
+[node name="leftray" type="RayCast2D" parent="." unique_id=385380325]
+position = Vector2(-72.99999, 52)
+scale = Vector2(3.4, 4.4000015)
+target_position = Vector2(0, 5)
+hit_from_inside = true
+
+[node name="rightray" type="RayCast2D" parent="." unique_id=1880076023]
+position = Vector2(72.99998, 52)
+scale = Vector2(3.4, 4.4000015)
+target_position = Vector2(0, 5)
+hit_from_inside = true
+
+[node name="leftwallray" type="RayCast2D" parent="." unique_id=1818562330]
+position = Vector2(-70, -4)
+target_position = Vector2(-24, 0)
+
+[node name="rightwallray" type="RayCast2D" parent="." unique_id=2099969048]
+position = Vector2(70, -4)
+target_position = Vector2(25, 0)
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
