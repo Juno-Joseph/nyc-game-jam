@@ -21,6 +21,11 @@ window/size/viewport_width=288
 window/size/viewport_height=162
 window/stretch/mode="canvas_items"
 
+[layer_names]
+
+2d_physics/layer_1="Terrain"
+2d_physics/layer_2="Entities"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
