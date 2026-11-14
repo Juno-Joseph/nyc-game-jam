@@ -11,13 +11,15 @@ config_version=5
 [application]
 
 config/name="NYC Game Jam"
-run/main_scene="uid://2o3d6npih2jg"
+run/main_scene="uid://bqqessrdqmlq4"
 config/features=PackedStringArray("4.7", "Forward Plus")
 config/icon="res://icon.svg"
 
 [display]
 
-window/stretch/mode="canvas_items"
+window/size/viewport_width=288
+window/size/viewport_height=162
+window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
 [physics]
@@ -26,4 +28,5 @@ window/stretch/aspect="expand"
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 rendering_device/driver.windows="d3d12"
