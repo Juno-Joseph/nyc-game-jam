@@ -4,8 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://d1rlfasa8k7n4" path="res://Scenes/Player/Running/Running_Player.tscn" id="1_ikxv6"]
 [ext_resource type="Texture2D" uid="uid://cwhow1lyji02o" path="res://Assets/Player/Brick smal (1).png" id="2_4fxgr"]
 [ext_resource type="PackedScene" uid="uid://cyr51l4nh7h31" path="res://Scenes/Levels/Level_1/Level_1_Enemy.tscn" id="2_xdit2"]
+<<<<<<< Updated upstream
 [ext_resource type="Texture2D" uid="uid://2kfo74lsui2l" path="res://Assets/Player/Final running bg.png" id="4_bblnu"]
 [ext_resource type="PackedScene" uid="uid://bvi8fe5onns1t" path="res://Scenes/Levels/Level_1/reset_zone.tscn" id="6_js4b8"]
+=======
+[ext_resource type="Texture2D" uid="uid://2kfo74lsui2l" path="res://assets/Player/Final running bg.png" id="4_bblnu"]
+[ext_resource type="Texture2D" uid="uid://da6n6k3g1yql6" path="res://assets/Player/Subway place holder.jpg" id="6_js4b8"]
+>>>>>>> Stashed changes
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4fxgr"]
 texture = ExtResource("1_5ahs0")
@@ -154,6 +159,13 @@ position = Vector2(1340, -182)
 scale = Vector2(0.13, 0.089)
 SPEED = 100.0
 
+<<<<<<< Updated upstream
 [node name="ResetZone" parent="." unique_id=1309492550 instance=ExtResource("6_js4b8")]
 position = Vector2(357, 64)
 collision_mask = 3
+=======
+[node name="SubwayPlaceHolder" type="Sprite2D" parent="." unique_id=99011658]
+position = Vector2(1756.75, -158.875)
+scale = Vector2(0.0975001, 0.09235906)
+texture = ExtResource("6_js4b8")
+>>>>>>> Stashed changes
