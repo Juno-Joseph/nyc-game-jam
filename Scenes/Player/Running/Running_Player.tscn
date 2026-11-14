@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d1rlfasa8k7n4"]
 
 [ext_resource type="Script" uid="uid://42pw42rhdx0c" path="res://Scripts/Player/Running/runnning_player.gd" id="1_tn62b"]
-[ext_resource type="Texture2D" uid="uid://duanhcpoa8wvr" path="res://assets/Player/rat.png" id="2_tn62b"]
+[ext_resource type="Texture2D" uid="uid://duanhcpoa8wvr" path="res://Assets/Player/rat.png" id="2_tn62b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(12, 18)
@@ -28,6 +28,7 @@ resource_name = "hurt"
 resource_name = "idle"
 length = 3.0000034897957
 loop_mode = 1
+step = 0.016666668
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -87,6 +88,7 @@ _data = {
 
 [node name="RunningPlayer" type="CharacterBody2D" unique_id=1661859348]
 collision_layer = 2
+collision_mask = 3
 script = ExtResource("1_tn62b")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=916927276]
