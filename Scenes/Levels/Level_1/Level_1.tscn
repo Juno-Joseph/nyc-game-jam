@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://2o3d6npih2jg"]
 
 [ext_resource type="PackedScene" uid="uid://d1rlfasa8k7n4" path="res://Scenes/Player/Running/Running_Player.tscn" id="1_ikxv6"]
+[ext_resource type="Script" uid="uid://dgk6f8etlwcqb" path="res://Scripts/Levels/Level_1/level_1.gd" id="1_xdit2"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(1166.75, 49.5)
 
 [node name="Level_1" type="Node2D" unique_id=296091239]
+script = ExtResource("1_xdit2")
 
 [node name="CharacterBody2D" parent="." unique_id=1661859348 instance=ExtResource("1_ikxv6")]
 
