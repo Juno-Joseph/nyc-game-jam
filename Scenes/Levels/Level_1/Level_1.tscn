@@ -106,7 +106,7 @@ shape = SubResource("RectangleShape2D_gali6")
 debug_color = Color(0.19193587, 0.6415285, 0, 1)
 
 [node name="Level1Enemy" parent="." unique_id=893323250 instance=ExtResource("2_xdit2")]
-position = Vector2(435, -72)
+position = Vector2(241, -81)
 scale = Vector2(0.13, 0.13)
 
 [node name="Level1Enemy2" parent="." unique_id=285260345 instance=ExtResource("2_xdit2")]
