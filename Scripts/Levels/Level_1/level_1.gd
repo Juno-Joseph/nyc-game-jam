@@ -1,7 +1,6 @@
 extends Node2D
 
 #Preload level 2
-
 var Level_2 = preload("res://Scenes/Levels/Level_2/Level_2.tscn")
 
 
