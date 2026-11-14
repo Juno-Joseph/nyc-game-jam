@@ -22,6 +22,11 @@ window/size/viewport_height=162
 window/stretch/mode="viewport"
 window/stretch/aspect="expand"
 
+[layer_names]
+
+2d_physics/layer_1="Terrain"
+2d_physics/layer_2="Entities"
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

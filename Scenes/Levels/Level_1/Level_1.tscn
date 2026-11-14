@@ -1,7 +1,18 @@
 [gd_scene format=3 uid="uid://2o3d6npih2jg"]
 
+[ext_resource type="Texture2D" uid="uid://dgm1keyfcphf0" path="res://assets/tileset.png" id="1_5ahs0"]
 [ext_resource type="PackedScene" uid="uid://d1rlfasa8k7n4" path="res://Scenes/Player/Running/Running_Player.tscn" id="1_ikxv6"]
 [ext_resource type="PackedScene" uid="uid://cyr51l4nh7h31" path="res://Scenes/Levels/Level_1/Level_1_Enemy.tscn" id="2_xdit2"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4fxgr"]
+texture = ExtResource("1_5ahs0")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_n628w"]
+physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
+sources/0 = SubResource("TileSetAtlasSource_4fxgr")
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(1333.8605, 381.25)
@@ -40,6 +51,9 @@ size = Vector2(512, 64)
 size = Vector2(546.5, 256)
 
 [node name="Level_1" type="Node2D" unique_id=296091239]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=118432934]
+tile_set = SubResource("TileSet_n628w")
 
 [node name="RunningPlayer" parent="." unique_id=1661859348 instance=ExtResource("1_ikxv6")]
 position = Vector2(184, -66)
