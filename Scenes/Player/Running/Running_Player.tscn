@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d1rlfasa8k7n4"]
 
 [ext_resource type="Script" uid="uid://42pw42rhdx0c" path="res://Scripts/Player/Running/runnning_player.gd" id="1_tn62b"]
-[ext_resource type="Texture2D" uid="uid://ybnkrvp5sii0" path="res://assets/Player/rat.png" id="2_tn62b"]
+[ext_resource type="Texture2D" uid="uid://bka8y8ccgi33y" path="res://assets/Player/rat.png" id="2_tn62b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(12, 18)
@@ -57,7 +57,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_qjq75"]
 resource_name = "run"
-length = 0.40000335419513283
+length = 0.4000033541951328
 loop_mode = 1
 step = 0.016666668
 tracks/0/type = "value"
