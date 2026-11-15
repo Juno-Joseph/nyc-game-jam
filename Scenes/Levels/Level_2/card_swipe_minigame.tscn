@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://d3ck04cg7e6qo"]
 
 [ext_resource type="Script" uid="uid://bwvqoawfobpab" path="res://Scripts/Levels/Level_2/card_swipe_minigame.gd" id="1_rlwfe"]
-[ext_resource type="FontFile" uid="uid://c451bnd0g1w7o" path="res://Assets/Doto-VariableFont_ROND,wght.ttf" id="2_bpc8d"]
-[ext_resource type="Texture2D" uid="uid://culq4o55najmb" path="res://Assets/metrocard.png" id="3_bpc8d"]
-[ext_resource type="Texture2D" uid="uid://c0vpfuwkj8oqb" path="res://Assets/down-arrow.png" id="3_p6ijk"]
+[ext_resource type="FontFile" uid="uid://c451bnd0g1w7o" path="res://assets/Doto-VariableFont_ROND,wght.ttf" id="2_bpc8d"]
+[ext_resource type="Texture2D" uid="uid://culq4o55najmb" path="res://assets/metrocard.png" id="3_bpc8d"]
+[ext_resource type="Texture2D" uid="uid://cp1hf2k16a1s4" path="res://assets/cardswipe_back.png" id="3_d4771"]
+[ext_resource type="Texture2D" uid="uid://cgik1tskj1kab" path="res://assets/cardswipe_front.png" id="5_4nhl5"]
 
 [node name="CardSwipeMinigame" type="Control" unique_id=1690920172]
 layout_mode = 3
@@ -23,34 +24,6 @@ grow_horizontal = 2
 grow_vertical = 2
 color = Color(0.42595553, 0.42595553, 0.4259555, 1)
 
-[node name="ReaderTrack" type="ColorRect" parent="." unique_id=1050920232]
-layout_mode = 0
-offset_left = 281.0
-offset_top = 274.0
-offset_right = 590.0
-offset_bottom = 282.0
-scale = Vector2(1, 2.3999977)
-color = Color(0.28778407, 0.28778407, 0.28778407, 1)
-
-[node name="TopRect" type="ColorRect" parent="." unique_id=1234053778]
-layout_mode = 0
-offset_left = 281.0
-offset_top = 222.0
-offset_right = 321.0
-offset_bottom = 262.0
-scale = Vector2(7.7201133, 1.3645034)
-color = Color(0.5609549, 0.5609549, 0.5609549, 1)
-
-[node name="BottomRect" type="ColorRect" parent="." unique_id=739519472]
-z_index = 5
-layout_mode = 0
-offset_left = 280.0
-offset_top = 285.00003
-offset_right = 320.0
-offset_bottom = 325.00003
-scale = Vector2(7.7642198, 1.5230858)
-color = Color(0.5609549, 0.5609549, 0.5609549, 1)
-
 [node name="StatusLabel" type="Label" parent="." unique_id=2042910201]
 layout_mode = 1
 offset_left = 246.0
@@ -62,6 +35,15 @@ theme_override_colors/font_color = Color(0.2, 0.57254905, 0.84313726, 1)
 theme_override_fonts/font = ExtResource("2_bpc8d")
 text = "Please Swipe Card"
 
+[node name="cardswipe_back" type="TextureRect" parent="." unique_id=513642373]
+layout_mode = 0
+offset_left = 277.0
+offset_top = 248.00002
+offset_right = 381.0
+offset_bottom = 272.0
+scale = Vector2(3, 3)
+texture = ExtResource("3_d4771")
+
 [node name="Card" type="TextureRect" parent="." unique_id=751761439]
 layout_mode = 0
 offset_left = 70.0
@@ -71,16 +53,13 @@ offset_bottom = 237.00002
 scale = Vector2(3, 3)
 texture = ExtResource("3_bpc8d")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=420727140]
-z_index = 5
+[node name="cardswipe_front" type="TextureRect" parent="." unique_id=1676226154]
 layout_mode = 0
-offset_left = 399.0
-offset_top = 331.0
-offset_right = 439.0
-offset_bottom = 371.0
-rotation = -1.5707964
-scale = Vector2(0.7719375, 2.0130556)
-texture = ExtResource("3_p6ijk")
-expand_mode = 1
+offset_left = 277.0
+offset_top = 272.0
+offset_right = 381.0
+offset_bottom = 296.0
+scale = Vector2(3, 3)
+texture = ExtResource("5_4nhl5")
 
 [connection signal="gui_input" from="Card" to="." method="_on_card_gui_input"]
