@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d1rlfasa8k7n4"]
 
 [ext_resource type="Script" uid="uid://42pw42rhdx0c" path="res://Scripts/Player/Running/runnning_player.gd" id="1_tn62b"]
-[ext_resource type="Texture2D" uid="uid://duanhcpoa8wvr" path="res://Assets/Player/rat.png" id="2_tn62b"]
+[ext_resource type="Texture2D" uid="uid://bka8y8ccgi33y" path="res://assets/Player/rat.png" id="2_tn62b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(12, 18)
@@ -19,6 +19,22 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 1,
 "values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_1lre1"]
+resource_name = "fall"
+length = 0.20000334376432
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(2, 2)]
 }
 
 [sub_resource type="Animation" id="Animation_aovup"]
@@ -45,7 +61,6 @@ tracks/0/keys = {
 [sub_resource type="Animation" id="Animation_ppwlw"]
 resource_name = "jump"
 length = 0.20000334376432
-loop_mode = 1
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -53,10 +68,10 @@ tracks/0/path = NodePath("Sprite2D:frame_coords")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
+"times": PackedFloat32Array(0, 0.033333335),
+"transitions": PackedFloat32Array(1, 1),
 "update": 1,
-"values": [Vector2i(0, 2)]
+"values": [Vector2i(0, 2), Vector2i(1, 2)]
 }
 
 [sub_resource type="Animation" id="Animation_qjq75"]
@@ -80,6 +95,7 @@ tracks/0/keys = {
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_ppwlw"]
 _data = {
 &"RESET": SubResource("Animation_tn62b"),
+&"fall": SubResource("Animation_1lre1"),
 &"hurt": SubResource("Animation_aovup"),
 &"idle": SubResource("Animation_a5fh5"),
 &"jump": SubResource("Animation_ppwlw"),
