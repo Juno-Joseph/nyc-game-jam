@@ -138,7 +138,7 @@ scale = Vector2(0.161, 0.13)
 SPEED = 150.0
 
 [node name="Level1Enemy3" parent="." unique_id=455968938 instance=ExtResource("2_xdit2")]
-position = Vector2(852, -136)
+position = Vector2(1643.0001, -137)
 scale = Vector2(0.161, 0.13)
 SPEED = 150.0
 
