@@ -1,12 +1,13 @@
 [gd_scene format=4 uid="uid://2o3d6npih2jg"]
 
-[ext_resource type="Texture2D" uid="uid://dgm1keyfcphf0" path="res://assets/tileset.png" id="1_5ahs0"]
+[ext_resource type="Texture2D" uid="uid://dgm1keyfcphf0" path="res://Assets/tileset.png" id="1_5ahs0"]
 [ext_resource type="PackedScene" uid="uid://d1rlfasa8k7n4" path="res://Scenes/Player/Running/Running_Player.tscn" id="1_ikxv6"]
-[ext_resource type="Texture2D" uid="uid://cwhow1lyji02o" path="res://assets/Player/Brick smal (1).png" id="2_4fxgr"]
+[ext_resource type="Texture2D" uid="uid://cwhow1lyji02o" path="res://Assets/Player/Brick smal (1).png" id="2_4fxgr"]
 [ext_resource type="PackedScene" uid="uid://cyr51l4nh7h31" path="res://Scenes/Levels/Level_1/Level_1_Enemy.tscn" id="2_xdit2"]
-[ext_resource type="Texture2D" uid="uid://2kfo74lsui2l" path="res://assets/Player/Final running bg.png" id="4_bblnu"]
+[ext_resource type="Texture2D" uid="uid://2kfo74lsui2l" path="res://Assets/Player/Final running bg.png" id="4_bblnu"]
 [ext_resource type="PackedScene" uid="uid://bvi8fe5onns1t" path="res://Scenes/Levels/Level_1/reset_zone.tscn" id="6_js4b8"]
-[ext_resource type="Texture2D" uid="uid://c61ngalg4c7b8" path="res://assets/Player/Subway placeholder.jpg" id="7_f20py"]
+[ext_resource type="Script" uid="uid://b2imebltv4pab" path="res://Scripts/Levels/Level_1/subway_goal.gd" id="7_ds4ml"]
+[ext_resource type="Texture2D" uid="uid://c61ngalg4c7b8" path="res://Assets/Player/Subway placeholder.jpg" id="7_f20py"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4fxgr"]
 texture = ExtResource("1_5ahs0")
@@ -126,15 +127,6 @@ shape = SubResource("RectangleShape2D_l3epk")
 position = Vector2(8224.665, -565.59247)
 shape = SubResource("RectangleShape2D_n1232")
 
-[node name="Goal subway" type="StaticBody2D" parent="." unique_id=594618534]
-position = Vector2(1024, -308)
-scale = Vector2(0.17898479, 0.24045585)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Goal subway" unique_id=1864881219]
-position = Vector2(4095.3196, 619.6564)
-shape = SubResource("RectangleShape2D_gali6")
-debug_color = Color(0.19193587, 0.6415285, 0, 1)
-
 [node name="Level1Enemy" parent="." unique_id=893323250 instance=ExtResource("2_xdit2")]
 position = Vector2(492, -74)
 scale = Vector2(0.13, 0.13)
@@ -159,7 +151,19 @@ SPEED = 100.0
 position = Vector2(357, 64)
 collision_mask = 3
 
-[node name="SubwayPlaceholder" type="Sprite2D" parent="." unique_id=583048386]
-position = Vector2(1757, -159.5)
+[node name="Subway Goal" type="Area2D" parent="." unique_id=1957314568]
+position = Vector2(1757, -159)
+collision_mask = 3
+script = ExtResource("7_ds4ml")
+
+[node name="SubwayPlaceholder" type="Sprite2D" parent="Subway Goal" unique_id=583048386]
+position = Vector2(0, -0.5)
 scale = Vector2(0.098000005, 0.09050445)
 texture = ExtResource("7_f20py")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Subway Goal" unique_id=1864881219]
+scale = Vector2(0.17898479, 0.24045585)
+shape = SubResource("RectangleShape2D_gali6")
+debug_color = Color(0.19215687, 0.6431373, 0, 0.34901962)
+
+[connection signal="body_entered" from="Subway Goal" to="RunningPlayer" method="_on_subway_goal_body_entered"]

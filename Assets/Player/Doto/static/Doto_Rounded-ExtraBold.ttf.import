@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://e3d801tpecax"
-path="res://.godot/imported/Doto_Rounded-ExtraBold.ttf-e5d569409f5a5b02ba9a3a2d21ac1b03.fontdata"
+path="res://.godot/imported/Doto_Rounded-ExtraBold.ttf-ed762e93e9214991cce545406fe8e657.fontdata"
 
 [deps]
 
-source_file="res://assets/Player/Doto/static/Doto_Rounded-ExtraBold.ttf"
-dest_files=["res://.godot/imported/Doto_Rounded-ExtraBold.ttf-e5d569409f5a5b02ba9a3a2d21ac1b03.fontdata"]
+source_file="res://Assets/Player/Doto/static/Doto_Rounded-ExtraBold.ttf"
+dest_files=["res://.godot/imported/Doto_Rounded-ExtraBold.ttf-ed762e93e9214991cce545406fe8e657.fontdata"]
 
 [params]
 

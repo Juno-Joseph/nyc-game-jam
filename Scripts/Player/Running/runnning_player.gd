@@ -1,5 +1,5 @@
 extends CharacterBody2D
-
+class_name Level_1_Player
 
 @export var SPEED = 300.0
 @export var JUMP_VELOCITY = -400.0
@@ -51,7 +51,9 @@ func _physics_process(delta: float) -> void:
 			animation_player.play("jump")
 		if(velocity.y > 0):
 			animation_player.play("fall")
-	
-	
-	
-	
+
+
+
+func _on_subway_goal_body_entered(body):
+	if body is Level_1_Player:
+		get_tree().change_scene_to_file("res://Scenes/Levels/Level_2/Level_2.tscn")
