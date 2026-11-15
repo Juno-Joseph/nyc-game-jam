@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cwhow1lyji02o"
-path="res://.godot/imported/Brick smal (1).png-608610da9cf306b0cfbbe00abde0ce03.ctex"
+path="res://.godot/imported/Brick smal (1).png-fdc0a5f35b282f5bbada93dbe5d93d81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Player/Brick smal (1).png"
-dest_files=["res://.godot/imported/Brick smal (1).png-608610da9cf306b0cfbbe00abde0ce03.ctex"]
+source_file="res://Assets/Player/Brick smal (1).png"
+dest_files=["res://.godot/imported/Brick smal (1).png-fdc0a5f35b282f5bbada93dbe5d93d81.ctex"]
 
 [params]
 

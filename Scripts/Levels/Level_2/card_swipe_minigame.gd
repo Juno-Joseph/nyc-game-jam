@@ -62,6 +62,10 @@ func _evaluate_swipe() -> void:
 		# Good Swipe
 		status_label.text = "PAID $2.75 \n BAL $0.00"
 		card.gui_input.disconnect(_on_card_gui_input) # Lock the card
+		
+		await get_tree().create_timer(0.7).timeout
+		
+		queue_free()
 	
 	var tween = create_tween()
 	tween.tween_property(card, "global_position:x", start_x, 0.2).set_trans(Tween.TRANS_SINE)
