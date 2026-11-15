@@ -1,10 +1,10 @@
 [gd_scene format=3 uid="uid://d3ck04cg7e6qo"]
 
 [ext_resource type="Script" uid="uid://bwvqoawfobpab" path="res://Scripts/Levels/Level_2/card_swipe_minigame.gd" id="1_rlwfe"]
-[ext_resource type="FontFile" uid="uid://c451bnd0g1w7o" path="res://assets/Doto-VariableFont_ROND,wght.ttf" id="2_bpc8d"]
-[ext_resource type="Texture2D" uid="uid://culq4o55najmb" path="res://assets/metrocard.png" id="3_bpc8d"]
-[ext_resource type="Texture2D" uid="uid://cp1hf2k16a1s4" path="res://assets/cardswipe_back.png" id="3_d4771"]
-[ext_resource type="Texture2D" uid="uid://cgik1tskj1kab" path="res://assets/cardswipe_front.png" id="5_4nhl5"]
+[ext_resource type="FontFile" uid="uid://c451bnd0g1w7o" path="res://Assets/Doto-VariableFont_ROND,wght.ttf" id="2_bpc8d"]
+[ext_resource type="Texture2D" uid="uid://culq4o55najmb" path="res://Assets/metrocard.png" id="3_bpc8d"]
+[ext_resource type="Texture2D" uid="uid://cp1hf2k16a1s4" path="res://Assets/cardswipe_back.png" id="3_d4771"]
+[ext_resource type="Texture2D" uid="uid://cgik1tskj1kab" path="res://Assets/cardswipe_front.png" id="5_4nhl5"]
 
 [node name="CardSwipeMinigame" type="Control" unique_id=1690920172]
 layout_mode = 3

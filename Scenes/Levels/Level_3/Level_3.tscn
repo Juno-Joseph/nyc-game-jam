@@ -4,3 +4,11 @@
 
 [node name="Level_3" type="Node2D" unique_id=1228214463]
 script = ExtResource("1_4ug6c")
+
+[node name="Label" type="Label" parent="." unique_id=1702460196]
+offset_left = -3.0
+offset_top = -2.0
+offset_right = 56.0
+offset_bottom = 21.0
+scale = Vector2(3.4917874, 3.0288403)
+text = "LEVEL 3"

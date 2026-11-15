@@ -65,7 +65,8 @@ func _evaluate_swipe() -> void:
 		
 		await get_tree().create_timer(0.7).timeout
 		
-		queue_free()
+		get_tree().change_scene_to_file("res://Scenes/Levels/Level_3/Level_3.tscn")
+		
 	
 	var tween = create_tween()
 	tween.tween_property(card, "global_position:x", start_x, 0.2).set_trans(Tween.TRANS_SINE)
