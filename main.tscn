@@ -1,8 +1,12 @@
 [gd_scene format=3 uid="uid://bqqessrdqmlq4"]
 
 [ext_resource type="Script" uid="uid://bhwur6w1odq82" path="res://main.gd" id="1_ig7tw"]
+[ext_resource type="AudioStream" uid="uid://carjvv34xbcrt" path="res://assets/bgm.ogg" id="2_0xm2m"]
 
 [node name="main" type="Node" unique_id=1471931600]
 script = ExtResource("1_ig7tw")
 
 [node name="mode" type="Node" parent="." unique_id=1542680296]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1014351102]
+stream = ExtResource("2_0xm2m")
