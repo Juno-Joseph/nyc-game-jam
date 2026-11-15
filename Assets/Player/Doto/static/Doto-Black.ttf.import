@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://d3sjayaaiy00c"
-path="res://.godot/imported/Doto-Black.ttf-20e59c8079e335276b9f2804b32e6d92.fontdata"
+path="res://.godot/imported/Doto-Black.ttf-34775835be60cb678c12111da2c29b55.fontdata"
 
 [deps]
 
-source_file="res://Assets/Player/Doto/static/Doto-Black.ttf"
-dest_files=["res://.godot/imported/Doto-Black.ttf-20e59c8079e335276b9f2804b32e6d92.fontdata"]
+source_file="res://assets/Player/Doto/static/Doto-Black.ttf"
+dest_files=["res://.godot/imported/Doto-Black.ttf-34775835be60cb678c12111da2c29b55.fontdata"]
 
 [params]
 

@@ -1,9 +1,9 @@
 [gd_scene format=3 uid="uid://d3ck04cg7e6qo"]
 
 [ext_resource type="Script" uid="uid://bwvqoawfobpab" path="res://Scripts/Levels/Level_2/card_swipe_minigame.gd" id="1_rlwfe"]
-[ext_resource type="FontFile" uid="uid://c451bnd0g1w7o" path="res://Assets/Doto-VariableFont_ROND,wght.ttf" id="2_bpc8d"]
-[ext_resource type="Texture2D" uid="uid://b72k7gco8iisy" path="res://Assets/MetroCard.SVG.webp" id="2_rlwfe"]
-[ext_resource type="Texture2D" uid="uid://c0vpfuwkj8oqb" path="res://Assets/down-arrow.png" id="3_p6ijk"]
+[ext_resource type="FontFile" uid="uid://c451bnd0g1w7o" path="res://assets/Doto-VariableFont_ROND,wght.ttf" id="2_bpc8d"]
+[ext_resource type="Texture2D" uid="uid://culq4o55najmb" path="res://assets/metrocard.png" id="3_bpc8d"]
+[ext_resource type="Texture2D" uid="uid://c0vpfuwkj8oqb" path="res://assets/down-arrow.png" id="3_p6ijk"]
 
 [node name="CardSwipeMinigame" type="Control" unique_id=1690920172]
 layout_mode = 3
@@ -71,13 +71,12 @@ text = "Please Swipe Card"
 
 [node name="Card" type="TextureRect" parent="." unique_id=751761439]
 layout_mode = 0
-offset_left = 78.0
-offset_top = 205.0
-offset_right = 1358.0
-offset_bottom = 1014.0
-scale = Vector2(0.13031898, 0.13031898)
-texture = ExtResource("2_rlwfe")
-flip_h = true
+offset_left = 70.0
+offset_top = 197.00002
+offset_right = 134.0
+offset_bottom = 237.00002
+scale = Vector2(3, 3)
+texture = ExtResource("3_bpc8d")
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=420727140]
 z_index = 5
