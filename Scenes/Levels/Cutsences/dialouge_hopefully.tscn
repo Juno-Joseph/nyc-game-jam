@@ -3,6 +3,10 @@
 [ext_resource type="Script" uid="uid://crw13ffiwybbo" path="res://Scripts/dialouge_hopefully.gd" id="1_3dv50"]
 [ext_resource type="Script" uid="uid://bo7wkyou5o8am" path="res://Scripts/timer.gd" id="2_d4iky"]
 
+[sub_resource type="LabelSettings" id="LabelSettings_3dv50"]
+font_size = 9
+shadow_color = Color(1, 0.22352941, 0.21568628, 0)
+
 [node name="Dialouge Hopefully?" type="Control" unique_id=825801949]
 layout_mode = 3
 anchors_preset = 15
@@ -14,9 +18,22 @@ script = ExtResource("1_3dv50")
 
 [node name="Label" type="Label" parent="." unique_id=210613662]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "BIG MAC WITH BACON"
+offset_left = 25.0
+offset_top = 33.0
+offset_right = 229.0
+offset_bottom = 66.0
+text = "ONLY USE FOR STARTING CUTSENCE"
+label_settings = SubResource("LabelSettings_3dv50")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Label" unique_id=1935735769]
+z_index = -1
+layout_mode = 0
+offset_right = 204.0
+offset_bottom = 33.0
+color = Color(0.1764706, 0.1764706, 0.1764706, 1)
 
 [node name="Timer" type="Timer" parent="." unique_id=1863242581]
 wait_time = 0.1
@@ -25,10 +42,10 @@ script = ExtResource("2_d4iky")
 
 [node name="Button" type="Button" parent="." unique_id=451393288]
 layout_mode = 0
-offset_left = 53.0
-offset_top = 38.0
-offset_right = 141.0
-offset_bottom = 65.0
+offset_left = 162.0
+offset_top = 73.0
+offset_right = 249.0
+offset_bottom = 104.0
 text = "Next"
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
