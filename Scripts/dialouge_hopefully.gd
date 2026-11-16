@@ -8,9 +8,9 @@ extends Control
 
 #vars
 var Dialogue_array : Array = [
-	"Smel my feet",
-	"test text",
-	"BOMBOCLAT"]
+	"So this is the Big Apple huh?",
+	"Oh, I feel like my eyes are gonna pop right out from excitement!",
+	"I-i gotta take a picture right away to send back to mama and the others!"]
 var dialog_index : int = 0:
 	set(vaule):
 		dialog_index = vaule
