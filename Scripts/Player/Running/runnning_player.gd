@@ -59,9 +59,9 @@ func _on_subway_goal_body_entered(body):
 		Global.MAIN.set_mode("res://Scenes/Levels/Level_2/Level_2.tscn")
 
 
-func _on_start_level_1_body_entered(body):
-	if body is Level_1_Player:
-		get_tree().change_scene_to_file("res://Scenes/Levels/Level_1/Level_1.tscn")
+#func _on_start_level_1_body_entered(body):
+	#if body is Level_1_Player:
+		#get_tree().change_scene_to_file("res://Scenes/Levels/Level_1/Level_1.tscn")
 
 func _on_area_2d_body_entered(body):
 	print("Detected something: ", body.name)
