@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cyr51l4nh7h31"]
 
 [ext_resource type="Script" uid="uid://bierel1tmtoe3" path="res://Scripts/Levels/Level_1/Enemies/level_1_enemy.gd" id="1_703r5"]
-[ext_resource type="Texture2D" uid="uid://clln1ndc4jlly" path="res://icon.svg" id="1_iikte"]
+[ext_resource type="Texture2D" uid="uid://bdehgpsk2x8gw" path="res://Assets/Cat Head.png" id="2_703r5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(22.5, 11.5)
@@ -15,8 +15,9 @@ collision_mask = 3
 script = ExtResource("1_703r5")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=104091810]
-modulate = Color(1, 0, 0, 1)
-texture = ExtResource("1_iikte")
+position = Vector2(0.5000038, 0.5)
+scale = Vector2(0.41562498, 0.40937498)
+texture = ExtResource("2_703r5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=826982737]
 position = Vector2(0, 59)
