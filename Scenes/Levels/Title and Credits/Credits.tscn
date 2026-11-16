@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://c321dsljc0f3f"]
 
 [ext_resource type="Texture2D" uid="uid://ca57e58kgn8pb" path="res://thumbnail_bg.png" id="1_k1mib"]
+[ext_resource type="Script" uid="uid://d31b4sdmtdwf6" path="res://Scripts/Levels/credits.gd" id="1_y0u6w"]
 [ext_resource type="Texture2D" uid="uid://l5li0sdsxvvg" path="res://Assets/Mandani 12.png" id="2_y0u6w"]
 [ext_resource type="Texture2D" uid="uid://basl5ksxuoy2s" path="res://Assets/subwayrat.png" id="3_fkkxj"]
 
@@ -14,6 +15,7 @@ font_color = Color(0, 0, 0, 1)
 
 [node name="Credits" type="Node2D" unique_id=665479393]
 scale = Vector2(2.9943852, 3.0171497)
+script = ExtResource("1_y0u6w")
 
 [node name="ThumbnailBg" type="Sprite2D" parent="." unique_id=1088129803]
 z_index = -2
@@ -58,3 +60,5 @@ label_settings = SubResource("LabelSettings_qp54p")
 [node name="Subwayrat" type="Sprite2D" parent="." unique_id=1509924879]
 position = Vector2(33, 170)
 texture = ExtResource("3_fkkxj")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

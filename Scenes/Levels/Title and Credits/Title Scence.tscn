@@ -19,6 +19,11 @@ func _process(delta):
 
 func _on_start_pressed():
 	Global.MAIN.set_mode(\"res://Scenes/Levels/Level_1/Level_1.tscn\")
+
+
+
+func _on_credits_pressed():
+	Global.MAIN.set_mode(\"res://Scenes/Levels/Title and Credits/Credits.tscn\")
 "
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vqv6i"]
@@ -82,3 +87,4 @@ theme_override_styles/hover = SubResource("StyleBoxFlat_o30dx")
 text = "Credits"
 
 [connection signal="pressed" from="Camera2D/Thumbnail/Start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="Camera2D/Thumbnail/Credits" to="." method="_on_credits_pressed"]
