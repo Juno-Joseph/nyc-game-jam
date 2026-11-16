@@ -116,6 +116,9 @@ _data = {
 &"run": SubResource("Animation_qjq75")
 }
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_awwja"]
+size = Vector2(8.771017, 11.845619)
+
 [node name="RunningPlayer" type="CharacterBody2D" unique_id=1661859348]
 collision_layer = 2
 collision_mask = 3
@@ -133,3 +136,12 @@ shape = SubResource("RectangleShape2D_04v0w")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=2145110784]
 libraries/ = SubResource("AnimationLibrary_ppwlw")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=1806196378]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=349859901]
+position = Vector2(2.3841858e-07, -9)
+scale = Vector2(1.3681425, 1.5195491)
+shape = SubResource("RectangleShape2D_awwja")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

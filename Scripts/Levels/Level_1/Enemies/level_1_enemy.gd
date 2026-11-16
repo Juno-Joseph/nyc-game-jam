@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Level_1_Enemy
 
 @onready var playernode : CharacterBody2D = get_parent().get_node("RunningPlayer")
 
@@ -14,9 +15,6 @@ func _ready() -> void:
 	$Sprite2D.flip_h = false if dir == 1 else true 
 
 func _physics_process(delta: float) -> void:
-	
-	
-	
 	
 	#Checks the rays and flips the sprite based on collision
 	if dir == 1 and (!$rightray.is_colliding() or $rightwallray.is_colliding()):
@@ -39,7 +37,3 @@ func _wait_dir_change(desired_dir: int):
 	desired_dir = dir
 	pass
 	
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	#pushes player back
-	pass # Replace with function body.

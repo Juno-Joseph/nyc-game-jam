@@ -127,7 +127,7 @@ shape = SubResource("RectangleShape2D_l3epk")
 position = Vector2(8224.665, -565.59247)
 shape = SubResource("RectangleShape2D_n1232")
 
-[node name="Level1Enemy" parent="." unique_id=893323250 instance=ExtResource("2_xdit2")]
+[node name="Level1Enemy" parent="." unique_id=1837466345 instance=ExtResource("2_xdit2")]
 position = Vector2(492, -74)
 scale = Vector2(0.13, 0.13)
 SPEED = 150.0

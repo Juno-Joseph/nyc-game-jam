@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://1mbi6j11x7ub"]
+
+[ext_resource type="Script" uid="uid://625k3148o87a" path="res://Scripts/Player/Bike/biking_player.gd" id="1_ulafx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ulafx"]
+
+[node name="BikingPlayer" type="CharacterBody2D" unique_id=2131712011]
+script = ExtResource("1_ulafx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=73467239]
+shape = SubResource("RectangleShape2D_ulafx")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=469527804]

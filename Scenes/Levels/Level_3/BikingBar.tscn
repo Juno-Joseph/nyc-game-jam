@@ -1,0 +1,54 @@
+[gd_scene format=3 uid="uid://vs4x1bedxub"]
+
+[ext_resource type="Script" uid="uid://0sd64v6fan7a" path="res://Scripts/Levels/Level_3/biking_bar.gd" id="1_rbskd"]
+
+[node name="Control" type="Control" unique_id=544846291]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_rbskd")
+current_value = 0.0
+decay_rate = 50.0
+fill_amount = 5.0
+sweet_spot_min = 40.0
+sweet_spot_max = 60.0
+required_win_time = 5.0
+
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=338947043]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 0
+offset_left = 293.0
+offset_top = 152.0
+offset_right = 393.0
+offset_bottom = 179.0
+scale = Vector2(2.6774094, 2.3551624)
+
+[node name="FinishedLabel" type="Label" parent="ProgressBar" unique_id=1095594310]
+visible = false
+layout_mode = 0
+offset_left = 11.578352
+offset_top = -25.900549
+offset_right = 88.578354
+offset_bottom = -2.900549
+text = "FINISHED!"
+
+[node name="BarBackground" type="ColorRect" parent="." unique_id=674509049]
+layout_mode = 0
+offset_left = 296.0
+offset_top = 155.0
+offset_right = 336.0
+offset_bottom = 195.0
+scale = Vector2(6.5600147, 1.5114087)
+color = Color(1, 0, 0, 0.4)
+
+[node name="GreenBar" type="ColorRect" parent="." unique_id=2139002370]
+layout_mode = 0
+offset_left = 404.99994
+offset_top = 155.0
+offset_right = 444.99994
+offset_bottom = 195.0
+scale = Vector2(1.3579684, 1.5088897)
+color = Color(0.052666605, 1, 0.01999998, 0.4)
