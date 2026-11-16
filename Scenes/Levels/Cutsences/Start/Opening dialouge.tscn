@@ -1,7 +1,6 @@
 [gd_scene format=3 uid="uid://cgq118f517od6"]
 
-[ext_resource type="Script" uid="uid://crw13ffiwybbo" path="res://Scripts/dialouge_hopefully.gd" id="1_3dv50"]
-[ext_resource type="Script" uid="uid://bo7wkyou5o8am" path="res://Scripts/timer.gd" id="2_d4iky"]
+[ext_resource type="Script" uid="uid://crw13ffiwybbo" path="res://Scripts/Dialougue cutsences/Strting dailouge.gd" id="1_nm6yo"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_3dv50"]
 font_size = 9
@@ -14,7 +13,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_3dv50")
+script = ExtResource("1_nm6yo")
 
 [node name="Label" type="Label" parent="." unique_id=210613662]
 layout_mode = 0
@@ -38,7 +37,6 @@ color = Color(0.1764706, 0.1764706, 0.1764706, 1)
 [node name="Timer" type="Timer" parent="." unique_id=1863242581]
 wait_time = 0.1
 one_shot = true
-script = ExtResource("2_d4iky")
 
 [node name="Button" type="Button" parent="." unique_id=451393288]
 layout_mode = 0

@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://blp82voklyj2a"]
+
+[ext_resource type="PackedScene" uid="uid://d1rlfasa8k7n4" path="res://Scenes/Player/Running/Running_Player.tscn" id="2_njb6j"]
+[ext_resource type="Texture2D" uid="uid://kul72d0mkw13" path="res://Scenes/Background/MET Reverse .2.png" id="3_5kn86"]
+[ext_resource type="PackedScene" uid="uid://cxnfcbfm632b3" path="res://Scenes/Levels/Cutsences/Ending/Ending dialouge.tscn" id="3_uekqh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gq2pt"]
+size = Vector2(289, 21)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_77g6y"]
+size = Vector2(25, 143)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ke56j"]
+size = Vector2(15, 15)
+
+[node name="EndingCutsence" type="Node2D" unique_id=2127132806]
+
+[node name="Screen" type="ColorRect" parent="." unique_id=659973208]
+z_index = -2
+offset_right = 288.0
+offset_bottom = 162.0
+color = Color(0, 0.3372549, 0.2901961, 0.27058825)
+metadata/_edit_use_anchors_ = true
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1930761609]
+position = Vector2(144.5, 151.5)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=780459420]
+shape = SubResource("RectangleShape2D_gq2pt")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=703391810]
+position = Vector2(-157, -81)
+shape = SubResource("RectangleShape2D_77g6y")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=742845225]
+position = Vector2(155.5, -80.5)
+shape = SubResource("RectangleShape2D_77g6y")
+
+[node name="RunningPlayer" parent="." unique_id=1661859348 instance=ExtResource("2_njb6j")]
+position = Vector2(28, 140)
+
+[node name="End the game?" type="Area2D" parent="." unique_id=2104017065]
+position = Vector2(280.5, 133.5)
+
+[node name="Collison box 2d" type="CollisionShape2D" parent="End the game?" unique_id=70987877]
+position = Vector2(-2.5, -2.5)
+shape = SubResource("RectangleShape2D_ke56j")
+
+[node name="Dialouge Hopefully?" parent="." unique_id=825801949 instance=ExtResource("3_uekqh")]
+
+[node name="MetReverse_2" type="Sprite2D" parent="." unique_id=785203257]
+z_index = -2
+position = Vector2(144.5, 80.99999)
+scale = Vector2(0.20252277, 0.20000002)
+texture = ExtResource("3_5kn86")
+
+[connection signal="body_shape_entered" from="End the game?" to="RunningPlayer" method="_on_start_level_2_body_shape_entered"]
