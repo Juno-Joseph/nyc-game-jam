@@ -2,8 +2,29 @@
 
 [ext_resource type="Script" uid="uid://dka6jep0dqkfx" path="res://Scripts/Levels/Level_3/level_3.gd" id="1_4ug6c"]
 [ext_resource type="PackedScene" uid="uid://vs4x1bedxub" path="res://Scenes/Levels/Level_3/BikingBar.tscn" id="2_7u6wr"]
+[ext_resource type="PackedScene" uid="uid://1mbi6j11x7ub" path="res://Scenes/Player/Bike/biking_player.tscn" id="3_1ahcd"]
+[ext_resource type="Texture2D" uid="uid://dl7ltk2q7ww6u" path="res://Scenes/Background/NHM .4.png" id="4_1yas8"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7uatg"]
+size = Vector2(864, 39)
 
 [node name="Level_3" type="Node2D" unique_id=1228214463]
 script = ExtResource("1_4ug6c")
 
 [node name="Control" parent="." unique_id=544846291 instance=ExtResource("2_7u6wr")]
+
+[node name="BikingPlayer" parent="." unique_id=2131712011 instance=ExtResource("3_1ahcd")]
+position = Vector2(429, 378.00003)
+scale = Vector2(2.445, 2.445)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=597175647]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1972693473]
+position = Vector2(432, 506)
+shape = SubResource("RectangleShape2D_7uatg")
+
+[node name="Nhm_4" type="Sprite2D" parent="." unique_id=974030943]
+z_index = -2
+position = Vector2(431.5, 243.5)
+scale = Vector2(0.59930557, 0.60123456)
+texture = ExtResource("4_1yas8")

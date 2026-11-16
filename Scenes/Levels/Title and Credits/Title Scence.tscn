@@ -49,3 +49,13 @@ theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_vqv6i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o30dx")
 text = "Start"
+
+[node name="Credits" type="Button" parent="Camera2D/Thumbnail" unique_id=804097786]
+offset_left = 438.763
+offset_top = 360.00018
+offset_right = 920.41266
+offset_bottom = 526.6668
+theme_override_font_sizes/font_size = 100
+theme_override_styles/normal = SubResource("StyleBoxFlat_vqv6i")
+theme_override_styles/hover = SubResource("StyleBoxFlat_o30dx")
+text = "Credits"

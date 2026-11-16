@@ -1,13 +1,59 @@
 [gd_scene format=3 uid="uid://1mbi6j11x7ub"]
 
 [ext_resource type="Script" uid="uid://625k3148o87a" path="res://Scripts/Player/Bike/biking_player.gd" id="1_ulafx"]
+[ext_resource type="Texture2D" uid="uid://bw13if3adiknm" path="res://Assets/biking.png" id="2_ls1in"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ulafx"]
+size = Vector2(83, 26)
+
+[sub_resource type="Animation" id="Animation_bgax7"]
+resource_name = "Bicking"
+length = 0.36666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.13333334, 0.2, 0.26666668, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2i(0, 0), Vector2i(1, 0), Vector2i(2, 0), Vector2i(3, 0), Vector2i(4, 0), Vector2i(5, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_kjlww"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame_coords")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [Vector2i(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_50jc8"]
+_data = {
+&"Bicking": SubResource("Animation_bgax7"),
+&"RESET": SubResource("Animation_kjlww")
+}
 
 [node name="BikingPlayer" type="CharacterBody2D" unique_id=2131712011]
 script = ExtResource("1_ulafx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=73467239]
+position = Vector2(-1.5, 30)
 shape = SubResource("RectangleShape2D_ulafx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=469527804]
+texture = ExtResource("2_ls1in")
+hframes = 6
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=206421284]
+libraries/ = SubResource("AnimationLibrary_50jc8")
