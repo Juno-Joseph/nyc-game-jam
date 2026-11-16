@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c61ngalg4c7b8"
-path="res://.godot/imported/Subway placeholder.jpg-e3cb7b8c223c673c2c39978118763926.ctex"
+path="res://.godot/imported/Subway placeholder.jpg-ecf186936d925b22a7dfa5c934ea152a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Subway placeholder.jpg"
-dest_files=["res://.godot/imported/Subway placeholder.jpg-e3cb7b8c223c673c2c39978118763926.ctex"]
+source_file="res://assets/Player/Subway placeholder.jpg"
+dest_files=["res://.godot/imported/Subway placeholder.jpg-ecf186936d925b22a7dfa5c934ea152a.ctex"]
 
 [params]
 
