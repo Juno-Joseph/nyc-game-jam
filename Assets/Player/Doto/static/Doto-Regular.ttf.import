@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dlpexk2qucn7b"
-path="res://.godot/imported/Doto-Regular.ttf-51ee43b54ad15a754d314dd36ea62b45.fontdata"
+path="res://.godot/imported/Doto-Regular.ttf-75401a29e362b5ecc63d13f665beaaa6.fontdata"
 
 [deps]
 
-source_file="res://Assets/Player/Doto/static/Doto-Regular.ttf"
-dest_files=["res://.godot/imported/Doto-Regular.ttf-51ee43b54ad15a754d314dd36ea62b45.fontdata"]
+source_file="res://assets/Player/Doto/static/Doto-Regular.ttf"
+dest_files=["res://.godot/imported/Doto-Regular.ttf-75401a29e362b5ecc63d13f665beaaa6.fontdata"]
 
 [params]
 

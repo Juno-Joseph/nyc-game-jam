@@ -56,14 +56,8 @@ func _physics_process(delta: float) -> void:
 
 func _on_subway_goal_body_entered(body):
 	if body is Level_1_Player:
-		get_tree().change_scene_to_file("res://Scenes/Levels/Level_2/Level_2.tscn")
-
+		Global.MAIN.set_mode("res://Scenes/Levels/Level_2/Level_2.tscn")
 
 func _on_start_level_1_body_entered(body):
 	if body is Level_1_Player:
 		get_tree().change_scene_to_file("res://Scenes/Levels/Level_1/Level_1.tscn")
-
-
-func _on_start_level_2_body_shape_entered(body_rid: RID, body: Node2D, body_shape_index: int, local_shape_index: int) -> void:
-	if body is Level_1_Player:
-		get_tree().change_scene_to_file("res://Scenes/Levels/Title and Credits/Credits.tscn")
