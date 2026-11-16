@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://basl5ksxuoy2s"
-path="res://.godot/imported/subwayrat.png-4471dfad321d1a10bb0c26a919e3d49d.ctex"
+path="res://.godot/imported/subwayrat.png-c891d9a6ebed251237f74d3811fe868e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/subwayrat.png"
-dest_files=["res://.godot/imported/subwayrat.png-4471dfad321d1a10bb0c26a919e3d49d.ctex"]
+source_file="res://Assets/subwayrat.png"
+dest_files=["res://.godot/imported/subwayrat.png-c891d9a6ebed251237f74d3811fe868e.ctex"]
 
 [params]
 
