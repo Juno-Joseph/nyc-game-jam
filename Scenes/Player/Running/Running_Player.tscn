@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://d1rlfasa8k7n4"]
 
 [ext_resource type="Script" uid="uid://42pw42rhdx0c" path="res://Scripts/Player/Running/runnning_player.gd" id="1_tn62b"]
-[ext_resource type="Texture2D" uid="uid://p885vas52uq7" path="res://assets/Player/rat.png" id="2_tn62b"]
+[ext_resource type="Texture2D" uid="uid://p885vas52uq7" path="res://Assets/Player/rat.png" id="2_tn62b"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_04v0w"]
 size = Vector2(12, 18)
@@ -40,8 +40,7 @@ tracks/0/keys = {
 
 [sub_resource type="Animation" id="Animation_aovup"]
 resource_name = "hurt"
-length = 0.2
-loop_mode = 1
+length = 0.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
@@ -118,10 +117,9 @@ _data = {
 }
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_awwja"]
-size = Vector2(8.771017, 11.845619)
+size = Vector2(21.196625, 12.503709)
 
 [node name="RunningPlayer" type="CharacterBody2D" unique_id=1661859348]
-collision_layer = 2
 collision_mask = 3
 script = ExtResource("1_tn62b")
 
@@ -139,10 +137,14 @@ shape = SubResource("RectangleShape2D_04v0w")
 libraries/ = SubResource("AnimationLibrary_ppwlw")
 
 [node name="Area2D" type="Area2D" parent="." unique_id=1806196378]
+position = Vector2(-1, -1)
+collision_layer = 0
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=349859901]
-position = Vector2(2.3841858e-07, -9)
+position = Vector2(1.5, -8.500001)
 scale = Vector2(1.3681425, 1.5195491)
 shape = SubResource("RectangleShape2D_awwja")
 
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

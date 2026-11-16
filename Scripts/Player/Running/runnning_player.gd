@@ -7,6 +7,7 @@ class_name Level_1_Player
 @onready var animation_player = $AnimationPlayer
 @onready var Sprite = $Sprite2D
 
+var is_hurt: bool = false
 
 func _ready() -> void:
 	get_tree().root.content_scale_factor = 3.0
@@ -14,6 +15,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
+	
 	if not is_on_floor():
 		velocity += get_gravity() * delta
 
@@ -37,20 +39,20 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 	
-	
-	if Input.is_action_pressed("right"):
-		if(is_on_floor()): animation_player.play("run")
-		Sprite.flip_h = false
-	elif Input.is_action_pressed("left"):
-		if(is_on_floor()): animation_player.play("run")
-		Sprite.flip_h = true
-	else:
-		if(is_on_floor()): animation_player.play("idle")
-	if !is_on_floor():
-		if(_jumped):
-			animation_player.play("jump")
-		if(velocity.y > 0):
-			animation_player.play("fall")
+	if not is_hurt:
+		if Input.is_action_pressed("right"):
+			if(is_on_floor()): animation_player.play("run")
+			Sprite.flip_h = false
+		elif Input.is_action_pressed("left"):
+			if(is_on_floor()): animation_player.play("run")
+			Sprite.flip_h = true
+		else:
+			if(is_on_floor()): animation_player.play("idle")
+		if !is_on_floor():
+			if(_jumped):
+				animation_player.play("jump")
+			if(velocity.y > 0):
+				animation_player.play("fall")
 
 func _on_subway_goal_body_entered(body):
 	if body is Level_1_Player:
@@ -62,6 +64,14 @@ func _on_start_level_1_body_entered(body):
 		get_tree().change_scene_to_file("res://Scenes/Levels/Level_1/Level_1.tscn")
 
 func _on_area_2d_body_entered(body):
+	print("Detected something: ", body.name)
 	if body is Level_1_Enemy:
 		print("Hit")
+		is_hurt = true
+		SPEED = 0
 		animation_player.play("hurt")
+
+func _on_animation_player_animation_finished(anim_name):
+	if anim_name == "hurt":
+		SPEED = 300
+		is_hurt = false

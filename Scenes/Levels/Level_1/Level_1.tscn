@@ -68,20 +68,13 @@ position = Vector2(492, -74)
 scale = Vector2(0.13, 0.13)
 SPEED = 150.0
 
-[node name="Level1Enemy2" parent="." unique_id=285260345 instance=ExtResource("2_xdit2")]
-position = Vector2(788, -137)
-scale = Vector2(0.161, 0.13)
-SPEED = 150.0
+[node name="Level1Enemy2" parent="." unique_id=893323250 instance=ExtResource("2_xdit2")]
+position = Vector2(836.99994, -143)
+scale = Vector2(0.19330677, 0.19330677)
 
-[node name="Level1Enemy3" parent="." unique_id=455968938 instance=ExtResource("2_xdit2")]
-position = Vector2(1643.0001, -137)
-scale = Vector2(0.161, 0.13)
-SPEED = 150.0
-
-[node name="Level1Enemy4" parent="." unique_id=553304709 instance=ExtResource("2_xdit2")]
-position = Vector2(1340, -182)
-scale = Vector2(0.13, 0.089)
-SPEED = 100.0
+[node name="Level1Enemy3" parent="." unique_id=2093247221 instance=ExtResource("2_xdit2")]
+position = Vector2(1344, -190)
+scale = Vector2(0.17176764, 0.17176764)
 
 [node name="ResetZone" parent="." unique_id=1309492550 instance=ExtResource("6_js4b8")]
 position = Vector2(357, 64)
@@ -106,5 +99,9 @@ debug_color = Color(0.19215687, 0.6431373, 0, 0.34901962)
 [node name="Subentr" type="Sprite2D" parent="Subway Goal" unique_id=1229229085]
 position = Vector2(-1, 0)
 texture = ExtResource("8_ds4ml")
+
+[node name="Level1Enemy4" parent="." unique_id=143913983 instance=ExtResource("2_xdit2")]
+position = Vector2(1614, -146)
+scale = Vector2(0.16014403, 0.16014403)
 
 [connection signal="body_entered" from="Subway Goal" to="RunningPlayer" method="_on_subway_goal_body_entered"]
