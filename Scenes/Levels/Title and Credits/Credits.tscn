@@ -2,10 +2,10 @@
 
 [ext_resource type="Texture2D" uid="uid://ca57e58kgn8pb" path="res://thumbnail_bg.png" id="1_k1mib"]
 [ext_resource type="Texture2D" uid="uid://l5li0sdsxvvg" path="res://Assets/Mandani 12.png" id="2_y0u6w"]
-[ext_resource type="Texture2D" path="res://Assets/rat.png" id="3_itdl1"]
+[ext_resource type="Texture2D" uid="uid://basl5ksxuoy2s" path="res://Assets/subwayrat.png" id="3_fkkxj"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_7uatg"]
-font_size = 10
+font_size = 11
 font_color = Color(0, 0, 0, 1)
 
 [sub_resource type="LabelSettings" id="LabelSettings_qp54p"]
@@ -28,14 +28,15 @@ offset_bottom = 156.0
 text = "Back to Title"
 
 [node name="Label" type="Label" parent="." unique_id=42421570]
-offset_left = 12.0
-offset_top = 13.0
-offset_right = 262.0
-offset_bottom = 110.0
+offset_left = 8.0
+offset_top = 14.0
+offset_right = 284.0
+offset_bottom = 111.0
 text = "Game Systems and Level Designer - Elijah Walcott 
 Art and Sound - Julien Olsson
 Gameplay and System Engineer - Juno Joseph
-UI/UX Design - Michael Tarkovsky and Elijah Walcott"
+UI/UX Design - Michael Tarkovsky and Elijah Walcott
+Narrative Design - Joyce Y."
 label_settings = SubResource("LabelSettings_7uatg")
 
 [node name="Mandani12" type="Sprite2D" parent="." unique_id=341735486]
@@ -53,8 +54,6 @@ the GOAT
 <-----"
 label_settings = SubResource("LabelSettings_qp54p")
 
-[node name="Rat" type="Sprite2D" parent="." unique_id=1447095640]
-position = Vector2(35, 150)
-texture = ExtResource("3_itdl1")
-hframes = 8
-vframes = 4
+[node name="Subwayrat" type="Sprite2D" parent="." unique_id=1509924879]
+position = Vector2(33, 170)
+texture = ExtResource("3_fkkxj")
