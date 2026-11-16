@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://bb2k68hvgwbrw"
-path="res://.godot/imported/Doto-VariableFont_ROND,wght.ttf-4385288c2504f64c49efb1232877c9d5.fontdata"
+path="res://.godot/imported/Doto-VariableFont_ROND,wght.ttf-846f3d88c32229725ed42683630ba19b.fontdata"
 
 [deps]
 
-source_file="res://Assets/Player/Doto/Doto-VariableFont_ROND,wght.ttf"
-dest_files=["res://.godot/imported/Doto-VariableFont_ROND,wght.ttf-4385288c2504f64c49efb1232877c9d5.fontdata"]
+source_file="res://assets/Player/Doto/Doto-VariableFont_ROND,wght.ttf"
+dest_files=["res://.godot/imported/Doto-VariableFont_ROND,wght.ttf-846f3d88c32229725ed42683630ba19b.fontdata"]
 
 [params]
 
