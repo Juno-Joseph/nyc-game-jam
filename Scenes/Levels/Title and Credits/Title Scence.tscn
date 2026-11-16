@@ -2,6 +2,25 @@
 
 [ext_resource type="Texture2D" uid="uid://cpv0imydlwl2o" path="res://thumbnail.png" id="1_vqv6i"]
 
+[sub_resource type="GDScript" id="GDScript_ta2x5"]
+script/source = "extends Node2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	get_tree().root.content_scale_factor = 1.0
+
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+
+
+func _on_start_pressed():
+	Global.MAIN.set_mode(\"res://Scenes/Levels/Level_1/Level_1.tscn\")
+"
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_vqv6i"]
 bg_color = Color(0, 0, 0, 1)
 border_width_left = 6
@@ -27,6 +46,7 @@ corner_radius_bottom_right = 10
 corner_radius_bottom_left = 10
 
 [node name="TitleScence" type="Node2D" unique_id=1521932671]
+script = SubResource("GDScript_ta2x5")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1092249118]
 position = Vector2(431, 244)
@@ -36,8 +56,9 @@ limit_right = 864
 limit_bottom = 488
 
 [node name="Thumbnail" type="Sprite2D" parent="Camera2D" unique_id=2018428523]
-position = Vector2(0.49999666, -1.7881393e-05)
-scale = Vector2(0.15156248, 0.14999999)
+z_index = 4
+position = Vector2(1.2500305, 3.0000153)
+scale = Vector2(0.45078126, 0.4555556)
 texture = ExtResource("1_vqv6i")
 
 [node name="Start" type="Button" parent="Camera2D/Thumbnail" unique_id=382472075]
@@ -59,3 +80,5 @@ theme_override_font_sizes/font_size = 100
 theme_override_styles/normal = SubResource("StyleBoxFlat_vqv6i")
 theme_override_styles/hover = SubResource("StyleBoxFlat_o30dx")
 text = "Credits"
+
+[connection signal="pressed" from="Camera2D/Thumbnail/Start" to="." method="_on_start_pressed"]

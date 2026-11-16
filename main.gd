@@ -3,8 +3,9 @@ extends Node
 var mode
 
 func _ready():
+	Global.MAIN = self
 	mode = $mode
-	set_mode("res://Scenes/Levels/Level_1/Level_1.tscn")
+	set_mode("res://Scenes/Levels/Title and Credits/Title Scence.tscn")
 	$AudioStreamPlayer.play()
 
 func set_mode(path):

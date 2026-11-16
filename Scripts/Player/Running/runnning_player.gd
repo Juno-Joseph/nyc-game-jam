@@ -9,7 +9,7 @@ class_name Level_1_Player
 
 
 func _ready() -> void:
-	
+	get_tree().root.content_scale_factor = 3.0
 	pass
 
 func _physics_process(delta: float) -> void:
