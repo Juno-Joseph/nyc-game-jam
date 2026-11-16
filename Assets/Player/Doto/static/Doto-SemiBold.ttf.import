@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cjlwfy0tx0pqo"
-path="res://.godot/imported/Doto-SemiBold.ttf-e4b60fcb0ef8c8c760337b08c98a3d11.fontdata"
+path="res://.godot/imported/Doto-SemiBold.ttf-e208d91fa6d5ea456579552c9c6ae263.fontdata"
 
 [deps]
 
-source_file="res://Assets/Player/Doto/static/Doto-SemiBold.ttf"
-dest_files=["res://.godot/imported/Doto-SemiBold.ttf-e4b60fcb0ef8c8c760337b08c98a3d11.fontdata"]
+source_file="res://assets/Player/Doto/static/Doto-SemiBold.ttf"
+dest_files=["res://.godot/imported/Doto-SemiBold.ttf-e208d91fa6d5ea456579552c9c6ae263.fontdata"]
 
 [params]
 
