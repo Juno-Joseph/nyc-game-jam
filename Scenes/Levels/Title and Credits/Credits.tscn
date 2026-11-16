@@ -13,6 +13,7 @@ font_size = 8
 font_color = Color(0, 0, 0, 1)
 
 [node name="Credits" type="Node2D" unique_id=665479393]
+scale = Vector2(2.9943852, 3.0171497)
 
 [node name="ThumbnailBg" type="Sprite2D" parent="." unique_id=1088129803]
 z_index = -2

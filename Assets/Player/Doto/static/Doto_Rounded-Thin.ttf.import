@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://7jeexslbekuo"
-path="res://.godot/imported/Doto_Rounded-Thin.ttf-c44d6d0523da366aa9b0f17ea3e42b24.fontdata"
+path="res://.godot/imported/Doto_Rounded-Thin.ttf-e9a58479188722441d1cedc6b0f23f84.fontdata"
 
 [deps]
 
-source_file="res://assets/Player/Doto/static/Doto_Rounded-Thin.ttf"
-dest_files=["res://.godot/imported/Doto_Rounded-Thin.ttf-c44d6d0523da366aa9b0f17ea3e42b24.fontdata"]
+source_file="res://Assets/Player/Doto/static/Doto_Rounded-Thin.ttf"
+dest_files=["res://.godot/imported/Doto_Rounded-Thin.ttf-e9a58479188722441d1cedc6b0f23f84.fontdata"]
 
 [params]
 
