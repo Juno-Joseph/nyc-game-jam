@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://cbm1rn4804hel"
-path="res://.godot/imported/Doto_Rounded-SemiBold.ttf-82469b9a3a767c0ede9497d296d99458.fontdata"
+path="res://.godot/imported/Doto_Rounded-SemiBold.ttf-e1d17ea38e52e63f3fc5efeaf2e24380.fontdata"
 
 [deps]
 
-source_file="res://assets/Player/Doto/static/Doto_Rounded-SemiBold.ttf"
-dest_files=["res://.godot/imported/Doto_Rounded-SemiBold.ttf-82469b9a3a767c0ede9497d296d99458.fontdata"]
+source_file="res://Assets/Player/Doto/static/Doto_Rounded-SemiBold.ttf"
+dest_files=["res://.godot/imported/Doto_Rounded-SemiBold.ttf-e1d17ea38e52e63f3fc5efeaf2e24380.fontdata"]
 
 [params]
 
