@@ -2,8 +2,15 @@
 
 [ext_resource type="Script" uid="uid://ge1t5t1kqcyb" path="res://Scripts/Levels/Level_2/level_2.gd" id="1_lfbpc"]
 [ext_resource type="PackedScene" uid="uid://d3ck04cg7e6qo" path="res://Scenes/Levels/Level_2/card_swipe_minigame.tscn" id="2_bive4"]
+[ext_resource type="Texture2D" uid="uid://bn1wd7p4ekj85" path="res://Scenes/Background/Barclay Center train.png" id="3_5544y"]
 
 [node name="Level_2" type="Node2D" unique_id=2055166265]
 script = ExtResource("1_lfbpc")
 
 [node name="CardSwipeMinigame" parent="." unique_id=1690920172 instance=ExtResource("2_bive4")]
+
+[node name="BarclayCenterTrain" type="Sprite2D" parent="." unique_id=2032409456]
+z_index = -1
+position = Vector2(430.75006, 241.5)
+scale = Vector2(0.59756947, 0.5938272)
+texture = ExtResource("3_5544y")
