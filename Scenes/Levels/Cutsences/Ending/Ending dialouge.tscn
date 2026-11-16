@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://cxnfcbfm632b3"]
+
+[ext_resource type="Script" uid="uid://bfj3hotbmte8k" path="res://Scripts/Dialougue cutsences/ending_dialouge.gd" id="1_b080s"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_3dv50"]
+font_size = 9
+shadow_color = Color(1, 0.22352941, 0.21568628, 0)
+
+[node name="Dialouge Hopefully?" type="Control" unique_id=825801949]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_b080s")
+
+[node name="Label" type="Label" parent="." unique_id=210613662]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 33.0
+offset_right = 229.0
+offset_bottom = 66.0
+text = "ONLY USE FOR ENDING CUTSENCE"
+label_settings = SubResource("LabelSettings_3dv50")
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 3
+
+[node name="ColorRect" type="ColorRect" parent="Label" unique_id=1935735769]
+z_index = -1
+layout_mode = 0
+offset_right = 204.0
+offset_bottom = 33.0
+color = Color(0.1764706, 0.1764706, 0.1764706, 1)
+
+[node name="Timer" type="Timer" parent="." unique_id=1863242581]
+wait_time = 0.1
+one_shot = true
+
+[node name="Button" type="Button" parent="." unique_id=451393288]
+layout_mode = 0
+offset_left = 162.0
+offset_top = 73.0
+offset_right = 249.0
+offset_bottom = 104.0
+text = "Next"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
