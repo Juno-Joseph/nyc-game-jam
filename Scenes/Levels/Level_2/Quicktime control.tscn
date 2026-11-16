@@ -1,5 +1,21 @@
 [gd_scene format=3 uid="uid://c7tm3f7cfupox"]
 
+[ext_resource type="Script" uid="uid://1dy4v0dfmubu" path="res://Scenes/Levels/Level_2/quicktime_control.gd" id="1_h572c"]
+[ext_resource type="Shader" uid="uid://obb73l8ltfv7" path="res://Scenes/Levels/Level_2/Quicktime control.gdshader" id="2_6wkl6"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qp54p"]
+shader = ExtResource("2_6wkl6")
+shader_parameter/first_color = Color(0, 1, 0, 1)
+shader_parameter/second_color = Color(1, 0.98039216, 0, 1)
+shader_parameter/third_color = Color(1, 0, 0, 1)
+shader_parameter/outline_color = Color(0, 0, 0, 1)
+shader_parameter/unfilled_color = Color(0.443, 0.443, 0.443, 1)
+shader_parameter/value = 1.0
+shader_parameter/smooth_ = 0.005
+shader_parameter/width_in = 0.85
+shader_parameter/width_out = 0.95
+shader_parameter/border_width = 0.03
+
 [node name="QuicktimeControl" type="Control" unique_id=412164910]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +23,42 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_h572c")
+
+[node name="bARfILL" type="ColorRect" parent="." unique_id=1458396107]
+unique_name_in_owner = true
+material = SubResource("ShaderMaterial_qp54p")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="kEY" type="Label" parent="bARfILL" unique_id=308144334]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 13.0
+offset_top = 7.0
+offset_right = 26.0
+offset_bottom = 29.333334
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 16
+text = "Q"
+
+[node name="Secuss" type="Label" parent="bARfILL" unique_id=1463318112]
+unique_name_in_owner = true
+layout_mode = 0
+offset_left = 1.0
+offset_top = -23.0
+offset_right = 38.0
+offset_bottom = -0.66666603
+theme_override_constants/outline_size = 20
+theme_override_font_sizes/font_size = 16
+text = "NICE"
