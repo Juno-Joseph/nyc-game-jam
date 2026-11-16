@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bw13if3adiknm"
-path="res://.godot/imported/biking.png-510277e20cef1796dddd72bdef4720b3.ctex"
+path="res://.godot/imported/biking.png-4f77999a226d2338e8b51d08c6a79548.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/biking.png"
-dest_files=["res://.godot/imported/biking.png-510277e20cef1796dddd72bdef4720b3.ctex"]
+source_file="res://Assets/biking.png"
+dest_files=["res://.godot/imported/biking.png-4f77999a226d2338e8b51d08c6a79548.ctex"]
 
 [params]
 

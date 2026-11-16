@@ -49,7 +49,7 @@ shape = SubResource("RectangleShape2D_ke56j")
 [node name="Dialouge Hopefully?" parent="." unique_id=825801949 instance=ExtResource("3_uekqh")]
 
 [node name="MetReverse_2" type="Sprite2D" parent="." unique_id=785203257]
-z_index = -1
+z_index = -2
 position = Vector2(144.5, 80.99999)
 scale = Vector2(0.20252277, 0.20000002)
 texture = ExtResource("3_5kn86")

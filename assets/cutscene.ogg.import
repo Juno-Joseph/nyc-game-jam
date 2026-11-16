@@ -3,12 +3,12 @@
 importer="oggvorbisstr"
 type="AudioStreamOggVorbis"
 uid="uid://dv3nnol3lp4o"
-path="res://.godot/imported/cutscene.ogg-a61c106a5d9de63aee9d555098afc681.oggvorbisstr"
+path="res://.godot/imported/cutscene.ogg-addfb1a2a7af2f01815871bb0a138f8b.oggvorbisstr"
 
 [deps]
 
-source_file="res://assets/cutscene.ogg"
-dest_files=["res://.godot/imported/cutscene.ogg-a61c106a5d9de63aee9d555098afc681.oggvorbisstr"]
+source_file="res://Assets/cutscene.ogg"
+dest_files=["res://.godot/imported/cutscene.ogg-addfb1a2a7af2f01815871bb0a138f8b.oggvorbisstr"]
 
 [params]
 
