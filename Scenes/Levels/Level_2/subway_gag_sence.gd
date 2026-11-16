@@ -1,4 +1,4 @@
-extends Control
+extends Node2D
 
 
 # Called when the node enters the scene tree for the first time.
@@ -12,6 +12,5 @@ func _process(delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	#Global.MAIN.set_mode(change sance here plz)
-	
+	Global.MAIN.set_mode("res://Scenes/Levels/Level_3/Level_3.tscn")
 	pass # Replace with function body.

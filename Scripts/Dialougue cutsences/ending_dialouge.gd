@@ -49,6 +49,10 @@ func animate_label() -> void:
 
 
 func _on_button_pressed() -> void:
+	if dialog_index >= Dialogue_array.size():
+		Global.MAIN.set_mode("res://Scenes/Levels/Title and Credits/Credits.tscn")
+		return
+	
 	if timer.is_stopped():
 		animate_label()
 	else:

@@ -9,41 +9,49 @@
 script = ExtResource("1_mol62")
 
 [node name="Timer" type="Timer" parent="." unique_id=1400573764]
+wait_time = 3.0
 autostart = true
 
 [node name="TrainCar" type="Sprite2D" parent="." unique_id=1070870365]
-position = Vector2(155.5, 80.49999)
-scale = Vector2(0.21657382, 0.20248449)
+position = Vector2(437.50003, 249.5)
+scale = Vector2(0.6093315, 0.6223602)
 texture = ExtResource("2_5ov2k")
 
-[node name="Subwayrat" type="Sprite2D" parent="." unique_id=1860312008]
-position = Vector2(53, 137)
+[node name="Label" type="Label" parent="TrainCar" unique_id=162579726]
+offset_left = -150.06427
+offset_top = -175.32205
+offset_right = -110.06427
+offset_bottom = -152.32205
+scale = Vector2(6.3703957, 5.800161)
+text = "Bruh"
+metadata/_edit_use_anchors_ = true
+
+[node name="Subwayrat" type="Sprite2D" parent="TrainCar" unique_id=1860312008]
+position = Vector2(-473.27972, 279.03378)
+scale = Vector2(4.6173635, 4.93865)
 texture = ExtResource("3_kvvjl")
 vframes = 2
 
+[node name="CatHead(1)" type="Sprite2D" parent="TrainCar" unique_id=2089089189]
+position = Vector2(-43.86493, 249.40189)
+scale = Vector2(4.6173635, 4.93865)
+texture = ExtResource("4_h135o")
+
+[node name="CatHead(1)2" type="Sprite2D" parent="TrainCar" unique_id=131568497]
+position = Vector2(205.47272, 244.46323)
+scale = Vector2(4.6173635, 4.93865)
+texture = ExtResource("4_h135o")
+
+[node name="CatHead(1)3" type="Sprite2D" parent="TrainCar" unique_id=1467862553]
+position = Vector2(450.193, 244.46323)
+scale = Vector2(4.6173635, 4.93865)
+texture = ExtResource("4_h135o")
+
+[node name="CatHead(1)4" type="Sprite2D" parent="TrainCar" unique_id=2035217864]
+position = Vector2(644.1222, 244.46323)
+scale = Vector2(4.6173635, 4.93865)
+texture = ExtResource("4_h135o")
+
 [node name="Fail" type="Node" parent="." unique_id=1889298356]
-
-[node name="CatHead(1)" type="Sprite2D" parent="Fail" unique_id=2089089189]
-position = Vector2(146, 131)
-texture = ExtResource("4_h135o")
-
-[node name="CatHead(1)2" type="Sprite2D" parent="Fail" unique_id=131568497]
-position = Vector2(200, 130)
-texture = ExtResource("4_h135o")
-
-[node name="CatHead(1)3" type="Sprite2D" parent="Fail" unique_id=1467862553]
-position = Vector2(253, 130)
-texture = ExtResource("4_h135o")
-
-[node name="CatHead(1)4" type="Sprite2D" parent="Fail" unique_id=2035217864]
-position = Vector2(295, 130)
-texture = ExtResource("4_h135o")
-
-[node name="Label" type="Label" parent="." unique_id=162579726]
-offset_left = 123.0
-offset_top = 45.0
-offset_right = 163.0
-offset_bottom = 68.0
-text = "Bruh"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -41,7 +41,7 @@ func _process(delta) -> void:
 			finished_label.text = "Finished!"
 			finished_label.show()
 			await get_tree().create_timer(0.7).timeout
-			Global.MAIN.set_mode("res://Scenes/Levels/Title and Credits/Credits.tscn")
+			Global.MAIN.set_mode("res://Scenes/Levels/Cutsences/Ending/Ending Cutsence.tscn")
 	else:
 		progress_bar.modulate = Color("ff0000ff") 
 		#Lose progress if it falls out of the sweet spot
