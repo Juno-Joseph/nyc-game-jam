@@ -104,4 +104,13 @@ texture = ExtResource("8_ds4ml")
 position = Vector2(1614, -146)
 scale = Vector2(0.16014403, 0.16014403)
 
+[node name="Label" type="Label" parent="." unique_id=1655836824]
+offset_left = 183.0
+offset_top = -128.0
+offset_right = 323.0
+offset_bottom = -94.0
+theme_override_font_sizes/font_size = 11
+text = "Right and Left Arrows keys and space to jump"
+autowrap_mode = 3
+
 [connection signal="body_entered" from="Subway Goal" to="RunningPlayer" method="_on_subway_goal_body_entered"]

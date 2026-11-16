@@ -14,3 +14,12 @@ z_index = -1
 position = Vector2(430.75006, 241.5)
 scale = Vector2(0.59756947, 0.5938272)
 texture = ExtResource("3_5544y")
+
+[node name="Label" type="Label" parent="." unique_id=32539504]
+offset_left = 343.0
+offset_top = 383.0
+offset_right = 530.0
+offset_bottom = 461.375
+theme_override_font_sizes/font_size = 27
+text = "Click and Drag
+"

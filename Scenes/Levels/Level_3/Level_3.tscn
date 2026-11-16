@@ -28,3 +28,10 @@ z_index = -2
 position = Vector2(431.5, 243.5)
 scale = Vector2(0.59930557, 0.60123456)
 texture = ExtResource("4_1yas8")
+
+[node name="Label" type="Label" parent="." unique_id=1349283319]
+offset_left = 286.0
+offset_top = 88.0
+offset_right = 326.0
+offset_bottom = 111.0
+text = "GO with Left and Right Keys!!!!!"

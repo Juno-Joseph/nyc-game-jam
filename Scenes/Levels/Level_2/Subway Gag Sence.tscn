@@ -5,9 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://basl5ksxuoy2s" path="res://Assets/subwayrat.png" id="3_kvvjl"]
 [ext_resource type="Texture2D" uid="uid://cix1gkwwqakx8" path="res://Assets/Cat Head (1).png" id="4_h135o"]
 
-[node name="GetOffStopMinigame" type="Control" unique_id=866153538]
-layout_mode = 3
-anchors_preset = 0
+[node name="GetOffStopMinigame" type="Node2D" unique_id=978052286]
 script = ExtResource("1_mol62")
 
 [node name="Timer" type="Timer" parent="." unique_id=1400573764]
@@ -40,5 +38,12 @@ texture = ExtResource("4_h135o")
 [node name="CatHead(1)4" type="Sprite2D" parent="Fail" unique_id=2035217864]
 position = Vector2(295, 130)
 texture = ExtResource("4_h135o")
+
+[node name="Label" type="Label" parent="." unique_id=162579726]
+offset_left = 123.0
+offset_top = 45.0
+offset_right = 163.0
+offset_bottom = 68.0
+text = "Bruh"
 
 [connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
