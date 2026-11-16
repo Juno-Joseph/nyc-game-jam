@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c4elg8ay8tofw"
-path="res://.godot/imported/Mandani 12.png-da3df6f1837cea10b3f403d660a2edd5.ctex"
+path="res://.godot/imported/Mandani 12.png-7b933908b56bc4efbc2bb19f30d929dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Player/Mandani 12.png"
-dest_files=["res://.godot/imported/Mandani 12.png-da3df6f1837cea10b3f403d660a2edd5.ctex"]
+source_file="res://assets/Player/Mandani 12.png"
+dest_files=["res://.godot/imported/Mandani 12.png-7b933908b56bc4efbc2bb19f30d929dc.ctex"]
 
 [params]
 
